@@ -1,0 +1,68 @@
+{
+  "Header": {
+    "title": "RESUME ATS ANALYZER",
+    "paragraph": "Streamline your resume, optimize keywords, and surpass competition. Unlock the secrets to impressing recruiters and landing interviews effortlessly."
+  },
+  "About": {
+    "paragraph": 
+    "At ATS ANALYZER, we pioneer the future of career advancement. Our innovative ATS analyzer is meticulously crafted to empower job seekers like you. With advanced AI technology, we decode the complexities of applicant tracking systems, ensuring your resume stands out. Join us in revolutionizing the way you navigate your professional journey.",
+    "Why": [
+      "Accurate Scoring",
+      "Standard Template",
+      "ATS approvable resume",
+      "Expert reviewed"
+    ],
+    "Why2": [
+      "easy to use",
+      "reliable",
+      "to be decided",
+      "to be decided"
+    ]
+  },
+  "Services": [
+    {
+      "icon": "fa fa-wordpress",
+      "name": "RESUME ANALYZER",
+      "text": "Maximize your chances of success with our comprehensive resume scoring service. Our advanced algorithms analyze your resume against ATS criteria and industry standards, providing detailed feedback to enhance its effectiveness. Unlock invaluable insights to optimize your resume and stand out in today's competitive job market."
+    },
+    {
+      "icon": "fa fa-cart-arrow-down",
+      "name": "Skill generation",
+      "text": "Crafting the perfect resume just got easier with our cutting-edge template generation service. Say goodbye to formatting woes and hello to professional-looking resumes in minutes. Choose from a range of customizable templates tailored to your industry, ensuring your resume reflects your unique skills and experiences effortlessly."
+    },
+    {
+      "icon": "fa fa-cloud-download",
+      "name": "Edit or Build Resume:",
+      "text": "Whether you're starting from scratch or fine-tuning an existing resume, our expert team is here to help. With our edit or build resume service, receive personalized guidance and support to create a standout resume that showcases your qualifications and captures the attention of recruiters. Transform your career prospects today with our professional resume solutions."
+    }
+  ],
+  "Contact": {
+    "phone": "+91 8124469966",
+    "email": "brubankuamr.aids2021@citchennai.net",
+    "facebook": "fb.com",
+    "twitter": "twitter.com",
+    "youtube": "youtube.com"
+  },
+  "Features": [
+    {
+      "icon": "fa fa-check",
+      "title": "Accuracy",
+      "text": "The scores generated are more accurate."
+    },
+    {
+      "icon": "fa fa-file",
+      "title": "Correction Where Required",
+      "text": "Provides you corrected resume that is free from spelling and grammer mistakes"
+    },
+    {
+      "icon": "fa fa-briefcase",
+      "title": "Build Resumes in seconds",
+      "text": "Build resumes that matches job description within seconds with this tool."
+    },
+    {
+      "icon": "fa fa-info",
+      "title": "Get help",
+      "text": "Get professional help for building resumes and other profiles"
+    }
+  ]
+}
