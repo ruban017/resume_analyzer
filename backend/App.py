@@ -21,5 +21,5 @@ def gettingval():
     # return jsonify({"score": sc})
     return send_file('doughnut_chart.png', mimetype='image/png')
 
-if __name__ == "__main__":
-    app.run(debug=True, port=8080)
+# if __name__ == "__main__":
+#     app.run(debug=True, port=8080)
