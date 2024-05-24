@@ -16,15 +16,12 @@ export const Contact = (props) => {
   };
   const clearState = () => setState({ ...initialState });
 
-
-  function handleSSubmit(){
-    alert("feedback sent"); 
-  }
   
   
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(name, email, message);
+    alert("Feedback Submitted");
     
     {/* replace below with your own Service ID, Template ID and Public Key from your EmailJS account */ }
     
@@ -94,7 +91,7 @@ export const Contact = (props) => {
                   <p className="help-block text-danger"></p>
                 </div>
                 <div id="success"></div>
-                <button type="submit" className="btn btn-custom btn-lg" onChange={handleSSubmit}>
+                <button type="submit" className="btn btn-custom btn-lg" onChange={handleSubmit}>
                   Send Message
                 </button>
               </form>
