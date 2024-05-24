@@ -6,9 +6,9 @@ from score import analyze_resume
 app = Flask(__name__)
 
 cors = CORS(app)
-@app.route("/")
-def hello():
-    return "Hello there. Hope you are doing good!!"
+# @app.route("/")
+# def hello():
+#     return "Hello there. Hope you are doing good!!"
 
 
 @app.route("/resume", methods=["POST"])
