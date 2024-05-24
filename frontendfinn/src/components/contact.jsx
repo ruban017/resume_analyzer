@@ -15,6 +15,11 @@ export const Contact = (props) => {
     setState((prevState) => ({ ...prevState, [name]: value }));
   };
   const clearState = () => setState({ ...initialState });
+
+
+  function handleSSubmit(){
+    alert("feedback sent"); 
+  }
   
   
   const handleSubmit = (e) => {
@@ -89,7 +94,7 @@ export const Contact = (props) => {
                   <p className="help-block text-danger"></p>
                 </div>
                 <div id="success"></div>
-                <button type="submit" className="btn btn-custom btn-lg">
+                <button type="submit" className="btn btn-custom btn-lg" onChange={handleSSubmit}>
                   Send Message
                 </button>
               </form>
@@ -150,7 +155,7 @@ export const Contact = (props) => {
       <div id="footer">
         <div className="container text-center">
           <p>
-            &copy; 2024 ResumeAnalyzer. Design by{" RubanCit "}
+            &copy; 2024 Resume Analyzer. Design by{" R_B Cit "}
             <a href="http://www.templatewire.com" rel="nofollow">
               TemplateWire
             </a>
