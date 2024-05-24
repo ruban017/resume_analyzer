@@ -11,9 +11,9 @@ cors = CORS(app)
 #     return "Hello there. Hope you are doing good!!"
 
 
-@app.route("/resume", methods=["POST"])
+@app.route("/", methods=["POST"])
 def gettingval():
-    print("Original plan")
+    print("This service is running")
     job_dec = request.form.get('desc')
     resume_file = request.files.get('resume')
 
