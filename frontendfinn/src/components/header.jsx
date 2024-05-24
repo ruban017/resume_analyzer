@@ -25,7 +25,7 @@ function FileUpload() {
   const handleCalculateScore = async () => {
     console.log("CLicked!!!!!!!!!!!!!!")
       try {
-        const response = await axios.post('http://127.0.0.1:8080/resume', formData,{
+        const response = await axios.post('https://resume-analyzer-8l4f.onrender.com/', formData,{
           headers: {
             "Content-Type": "multipart/form-data",
           },
