@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React,{useState,useEffect} from "react";
 import axios from 'axios';
 // import {Result} from './result';
 // import uploadImg from "./upl.png";
@@ -6,6 +6,8 @@ import axios from 'axios';
 function FileUpload() {
   const [file, setFile] = useState(null);
   const [jd, setJd] = useState(null);
+  const [loading, setLoading] = useState(false);
+
   // const [score, setScore] = useState('');
   const [imageUrl, setImageUrl] = useState('');
 
@@ -18,12 +20,18 @@ function FileUpload() {
     const jdd = event.target.value; 
     setJd(jdd);
 }
+const handleCalculateScore = async () => {
+  console.log("CLicked!!!!!!!!!!!!!!")
+  if (!file || !jd) {
+    alert('Please upload a file and enter the job description.');
+    return;
+  }
+  
+  setLoading(true);
   const formData = new FormData();
   formData.append('resume', file);
   formData.append('desc', jd);
-
-  const handleCalculateScore = async () => {
-    console.log("CLicked!!!!!!!!!!!!!!")
+    
       try {
         const response = await axios.post('https://resume-analyzer-8l4f.onrender.com/', formData,{
           headers: {
@@ -40,6 +48,8 @@ function FileUpload() {
 
         } catch (error) {
         console.error('Error:', error);
+    } finally{
+      setLoading(false);
     }
 };
 
@@ -54,7 +64,17 @@ function FileUpload() {
         </div>
       )}
       <div>
-      <button className = " page-scroll" id="butt" onClick={handleCalculateScore}>Calculate Score</button>
+      <button className = {`btn btn-primary page-scroll ${loading ? 'disabled' : ''}`} id="butt" onClick={handleCalculateScore} disabled={loading}>
+      {loading ? (
+            <>
+              <span className="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+              Loading...
+            </>
+          ) : (
+            'Calculate Score'
+          )}
+
+      </button>
       </div>
       {imageUrl && <img className="mt-30px" src={imageUrl} alt="Generated Chart" />}
 
