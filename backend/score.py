@@ -79,8 +79,9 @@ def analyze_resume(file_path, job_description):
     resume_text = parse_resume(file_path)
     skill_section = extract_skill_section(resume_text)
     proj_section = project_section(resume_text)
-    skill_section+=proj_section
-    print(skill_section)
+    # skill_section+=proj_section
+    skill_section = resume_text
+    # print(skill_section)
     
     if skill_section:
         job_description_processed = ' '.join(preprocess_text(job_description))
